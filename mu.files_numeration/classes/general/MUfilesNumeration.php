@@ -3,7 +3,7 @@
 use Bitrix\Main\Application;
 
 class MUfilesNumeration {
-    public static function OnAdminTabControlBeginHandler(&$items) {
+    public static function OnAdminTabControlBeginHandler() {
         // применяем только к редактированию элемента
         $request = Application::getInstance()->getContext()->getRequest();
         $page = $request->getRequestedPage();
